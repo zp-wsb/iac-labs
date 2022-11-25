@@ -37,11 +37,7 @@ Czym jest fork repozytorium?
 
 ## Zadanie 2 - Uruchomienie projektu
 
-<<<<<<< HEAD
-Krok będzie wykonywany wspólnie
-=======
 Uruchomienie aplikacji lokalnie w celach deweloperskich
->>>>>>> 307e822 (Add script for lab-1)
 
 - Sklonuj repozytorium na swój komputer
 - Przejdź do katalogu example-app
@@ -169,7 +165,6 @@ Zanotuj koszty wykorzystania innych systemów operacyjnych do testowania
 
 Uruchamianie aplikacji w kontekście PaaS
 
-- Przejdź na gałąź (branch) `render`
 - Wejdź na stronę dostawcy platformy jako serwis (PaaS): [render.com](https://render.com/)
 - Załóż konto z wykorzystaniem konta GitHuba
 - Połącz swoje repozytorium do tworzonego stosu w kontekście PaaS
