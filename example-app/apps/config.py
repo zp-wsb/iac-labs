@@ -30,7 +30,7 @@ class ProductionConfig(Config):
 
     # PostgreSQL database
     SQLALCHEMY_DATABASE_URI = (
-        f"{os.getenv('DB_ENGINE', 'mysql')}://"
+        f"{os.getenv('DB_ENGINE', 'postgresql')}://"
         f"{os.getenv('DB_USERNAME', 'appseed_db_usr')}:"
         f"{os.getenv('DB_PASS', 'pass')}@"
         f"{os.getenv('DB_HOST', 'localhost')}:"

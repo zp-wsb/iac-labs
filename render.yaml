@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: flask-poetry
+    env: python
+    plan: free
+    rootDir: example-app
+    buildCommand: poetry install --no-dev --no-root --no-interaction
+    startCommand: gunicorn run:app
+    autoDeploy: false
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.10.3"

@@ -7,6 +7,10 @@ license = "MIT"
 readme = "README.md"
 packages = [{include = "example_app"}]
 
+[build-system]
+requires = ["setuptools", "poetry-core>=1.0"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.poetry.dependencies]
 python = "^3.9"
 Flask = "2.0.2"
@@ -25,18 +29,14 @@ python-dotenv = "0.19.2"
 Flask-Minify = "0.37"
 Flask-MySQLdb = "^1.0.1"
 taskipy = "^1.10.3"
+psycopg2 = "^2.9.5"
 
-[tool.poetry.group.dev.dependencies]
 black = "^22.10.0"
 pylint = "^2.15.5"
 pytest = "^7.2.0"
 isort = "^5.10.1"
 flake8 = "^5.0.4"
 bandit = "^1.7.4"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
 
 [tool.pylint.'MESSAGES CONTROL']
 max-line-length = 120
@@ -47,5 +47,4 @@ lint = "pylint apps"
 formatter = "black --check apps"
 security = "bandit -r apps"
 test = "pytest tests/"
-server = "python app.py"
-worker = "celery"
+server = "poetry run python run.py"
