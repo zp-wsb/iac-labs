@@ -50,6 +50,7 @@ Uruchomienie aplikacji lokalnie w celach deweloperskich
 
 ## Zadanie 3 - Tworzenie środowiska ciągłej integracji
 
+Podczas tego punktu laboratorium skorzystaj z [dokumentacji](https://docs.github.com/en/actions/quickstart)
 Zadanie ma na celu stworzenie środowiska wewnątrz GitHub Actions, które będzie weryfikowało poprawność kodu pod względem:
 
 - statycznej analizy kodu
@@ -99,7 +100,7 @@ Pytania na koniec:
 
 ## Zadanie 4 - tworzenie matrycy/ciągów zadań ciągłej integracji
 
-Modyfikacja środowiska CI by stworzyć ciąg zdarzeń
+Modyfikacja środowiska CI by stworzyć [ciąg zdarzeń](https://docs.github.com/en/actions/using-jobs/using-jobs-in-a-workflow#example-requiring-successful-dependent-jobs)
 
 Wykorzystując poprzednio stworzony pipeline zmodyfikuj go tak, by pewne zadania mogły wykonywać sie równolegle:
 
@@ -113,14 +114,14 @@ Przykładowy docelowy wygląd środowiska
 
 Efekt końcowy powinien wykorzystywać:
 
-- mechanizm grupowania:
+- mechanizm grupowania konfigurujący job:
 
 ```yaml
     concurrency:
       group: some-group-name
 ```
 
-- mechanizm pamięci podręcznej:
+- mechanizm pamięci podręcznej (krok `step` umieszczamy w każdym jobie):
 
 ```yaml
     - name: Cache build venv
@@ -145,6 +146,8 @@ Pytania:
 ## Zadanie 5 - Testowanie różnych systemów operacyjnych
 
 Dodaj testowanie w środowisku bazującym na systemach windows dla poprzednio zdefiniowanych zadań
+
+[Dokumentacja do ćwiczenia](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs)
 
 Do celu tego ćwiczenia będzie potrzebne polecenie `matrix`
 
