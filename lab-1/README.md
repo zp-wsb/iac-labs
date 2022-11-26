@@ -123,6 +123,8 @@ Efekt końcowy powinien wykorzystywać:
 
 - mechanizm pamięci podręcznej (krok `step` umieszczamy w każdym jobie):
 
+Dokumentacja [cache](https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#managing-caches)
+
 ```yaml
     - name: Cache build venv
       id: cached-poetry-dependencies
