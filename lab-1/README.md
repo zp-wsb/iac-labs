@@ -40,8 +40,8 @@ Czym jest fork repozytorium?
 Uruchomienie aplikacji lokalnie w celach deweloperskich
 
 - Sklonuj repozytorium na swój komputer
-- Przejdź do katalogu example-app
-- Upewnij się, ze poetry działa prawidłowo `poetry debug`
+- Przejdź do katalogu `example-app`
+- Upewnij się, ze poetry działa prawidłowo `poetry debug info`
 - Wykonaj polecenie `poetry install` w celu instalacji zależności projektowych
 - Uruchom projekt poleceniem `poetry run task server`
 - Przejdź do adresu `http://localhost:5000`
