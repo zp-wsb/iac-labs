@@ -142,7 +142,7 @@ needs: some-other-job
 
 Pytania:
 
-- Jaka jest różnica między `job` a `stage`?
+- Jaka jest różnica między `job` a `step`?
 - Dlaczego wykorzystujemy mechanizm `cache` zamiast duplikować cały kod?
 
 ## Zadanie 5 - Testowanie różnych systemów operacyjnych
