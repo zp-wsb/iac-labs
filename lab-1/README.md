@@ -43,7 +43,7 @@ Uruchomienie aplikacji lokalnie w celach deweloperskich
 - Przejdź do katalogu `example-app`
 - Upewnij się, ze poetry działa prawidłowo `poetry debug info`
 - Wykonaj polecenie `poetry install` w celu instalacji zależności projektowych
-- Uruchom projekt poleceniem `poetry run task server`
+- Uruchom projekt poleceniem `poetry run task local`
 - Przejdź do adresu `http://localhost:5000`
 - Czy projekt się uruchomił? Wnioski?
 - Przetestuj pozostałe możliwe zadania (sekcja `tasks`) do uruchomienia dostępne w pliku [pyproject.toml](../example-app/pyproject.toml)
