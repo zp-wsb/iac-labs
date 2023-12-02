@@ -196,6 +196,8 @@ Pytanie: Czy operacja zakończyła się powodzeniem?
 
 - Dodaj bazę danych [PostgreSQL](https://dashboard.render.com/new/database) do serwisu
 - Otrzymane informacje o utworzonej bazie zastosuj dla środowiska aplikacji webowej utworzonej na portalu
+
+  - Informacje o tym jakie zmienne środowiskowe zastosować (ich nazwy) znajdziesz [tutaj](https://github.com/mwidera/iac-labs/blob/main/example-app/env.sample#L10-L15)
 - Wykonaj ponowne wdrożenie kodu, by wprowadzone zmiany zostały rozpropagowane po środowisku
 
 Pytanie: Czy modyfikacje github actions są potrzebne, by uzyskać ciągle wdrażanie w tym przypadku?
