@@ -56,7 +56,7 @@ Uruchomienie aplikacji lokalnie w celach deweloperskich
 - Upewnij się, ze wszystkie testy zakończyły się powodzeniem
 - Wykonaj polecenie `poetry run task lint` w celu uruchomienia testów statycznych kodu
 - Upewnij się, ze wszystkie testy zakończyły się powodzeniem
-- Wykonaj polecenie `poetry run task format` w celu uruchomienia formatera kodu
+- Wykonaj polecenie `poetry run task formatter` w celu uruchomienia formatera kodu
 - Upewnij się, ze wszystkie testy zakończyły się powodzeniem
 - Wykonaj polecenie `poetry run task security` w celu uruchomienia testów bezpieczeństwa
 - Upewnij się, ze wszystkie testy zakończyły się powodzeniem
@@ -76,7 +76,9 @@ Zadanie ma na celu stworzenie środowiska wewnątrz GitHub Actions, które będz
 ![Actions](/assets/github-actions.png)
 
 - Wyszukaj ze zbioru gotowych rozwiązań workflow "python application" i stwórz go
+  
 Pytanie 1: W jakim katalogu github sugeruje tworzenie konfiguracji do uruchamiania CI/CD?
+
 Pytanie 2: Czy jest to ta sama metoda instalowania zależności?
 
 - Testowana aplikacja wymaga instalacji `poetry` do kontekstu Github-Actions zatem:
