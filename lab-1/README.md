@@ -12,10 +12,11 @@ CI/CD - Ciągła integracja oraz ciągłe wdrażanie
 2. Używając VDI (Sugeruje użycie Ubuntu 20.04)
 
 Opcja 1:
+
 Upewnij się, ze masz zainstalowane następujące aplikacje:
 
 - [git](https://git-scm.com/downloads) oraz konto na github - może być to konto z e-mailem uczelni
-- python 3 [python 3.10](https://www.python.org/downloads/)
+- python 3 [python 3.13](https://www.python.org/downloads/)
 - terminal do wykonywania poleceń CLI (może być z IDE)
 - IDE:
   - [PyCharm](https://www.jetbrains.com/pycharm/download/)
@@ -26,6 +27,7 @@ Opcjonalnie:
 [Ustawienia prywatności dla adresu email w GitHub](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
 
 Opcja 2:
+
 VDI - sprawdź czy wszystkie aplikacje (git, python3, IDE, poetry) sa dostępne w systemie do użycia
 
 ## Zadanie 1 - przygotowanie repozytorium do laboratorium
@@ -41,11 +43,10 @@ Uruchomienie aplikacji lokalnie w celach deweloperskich
 
 - Sklonuj repozytorium na swój komputer `git clone <adres-repozytorium>`
 - Przejdź do katalogu `example-app`
-- Kroki dodatkowe dla VDI Ubuntu 20.04 wydaj polecenie `sudo apt-get -y purge python3-virtualenv`
 - Zainstaluj poetry poleceniem: `curl -sSL https://install.python-poetry.org | python3 -`
 - Dodaj poetry do ścieżki systemowej: `export PATH=$PATH:$HOME/.local/bin`
 - Upewnij się, ze poetry działa prawidłowo `poetry debug info`
-- Wykonaj polecenie `poetry install` w celu instalacji zależności projektowych
+- Wykonaj polecenie `poetry install --no-root` w celu instalacji zależności projektowych
 - Uruchom projekt poleceniem `poetry run task local`
 - Przejdź do adresu `http://localhost:5000` w przeglądarce
 - Efekt końcowy powinien wyglądać podobnie do:
