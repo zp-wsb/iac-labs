@@ -50,7 +50,7 @@ Uruchomienie aplikacji lokalnie w celach deweloperskich
 - Uruchom projekt poleceniem `poetry run task local`
 - Przejdź do adresu `http://localhost:5000` w przeglądarce
 - Efekt końcowy powinien wyglądać podobnie do:
-- ![Example App](/assets/example-app.png)
+![Example App](/assets/example-app.png)
 - Stwórz konto z wykorzystaniem formularza rejestracji (uzyj swojego indeksu jako nazwy użytkownika, a e-mail dowolny)
 - Zaloguj się z wykorzystaniem utworzonego konta
 - Wykonaj polecenie `poetry run task test` w celu uruchomienia testów jednostkowych
@@ -200,16 +200,15 @@ Uruchamianie aplikacji w kontekście PaaS
 - Wejdź na stronę dostawcy platformy jako serwis (PaaS): [render.com](https://render.com/)
 - Załóż konto z wykorzystaniem konta GitHuba
 - Połącz swoje repozytorium do tworzonego stosu w kontekście PaaS
+![Render Blueprint](/assets/render-blueprint.png)
 - Uruchom wdrożenie aplikacji z planu znajdującego się w pliku: [render.yaml](../render.yaml)
-
-Pytanie: Czy operacja zakończyła się powodzeniem?
 
 ### Dodawanie bazy danych w wersji produkcyjnej
 
 - Dodaj bazę danych [PostgreSQL](https://dashboard.render.com/new/database) do serwisu
 - Otrzymane informacje o utworzonej bazie zastosuj dla środowiska aplikacji webowej utworzonej na portalu
-
-  - Informacje o tym jakie zmienne środowiskowe zastosować (ich nazwy) znajdziesz [tutaj](https://github.com/mwidera/iac-labs/blob/main/example-app/env.sample#L10-L15)
+- Informacje o tym jakie zmienne środowiskowe zastosować (ich nazwy) znajdziesz [tutaj](https://github.com/mwidera/iac-labs/blob/main/example-app/env.sample#L10-L15)
+![Render DB](/assets/render-env-db.png)
 - Wykonaj ponowne wdrożenie kodu, by wprowadzone zmiany zostały rozpropagowane po środowisku
 
 Pytanie: Czy modyfikacje github actions są potrzebne, by uzyskać ciągle wdrażanie w tym przypadku?

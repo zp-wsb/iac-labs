@@ -1,7 +1,7 @@
 services:
   - type: web
     name: flask-poetry
-    env: python
+    runtime: python
     plan: free
     rootDir: example-app
     buildCommand: poetry install --no-dev --no-root --no-interaction
@@ -9,4 +9,4 @@ services:
     autoDeploy: false
     envVars:
       - key: PYTHON_VERSION
-        value: "3.10.3"
+        value: "3.11.10"
