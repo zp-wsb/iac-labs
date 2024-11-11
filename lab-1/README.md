@@ -150,6 +150,8 @@ Dokumentacja [cache](https://docs.github.com/en/actions/using-workflows/caching-
         key: ${{ runner.os }}-venv
 ```
 
+Wykorzystaj powyższy fragment i odszukaj w wykonaniu budowania projektu ścieżki (path) i nadpisz ścieżkę w elementcie modyfikowanym
+
 - element ustalania kolejności
 
 ```yaml
@@ -163,15 +165,24 @@ Pytania:
 
 ## Zadanie 5 - Testowanie różnych systemów operacyjnych
 
-Dodaj testowanie w środowisku bazującym na systemach windows dla poprzednio zdefiniowanych zadań
+Dodaj testowanie prawidłowego budowania projektu w środowisku bazującym na systemach windows dla poprzednio zdefiniowanych zadań
 
 [Dokumentacja do ćwiczenia](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs)
 
 Do celu tego ćwiczenia będzie potrzebne polecenie `matrix`
 
 ```yaml
-matrix:
-        os: [ "ubuntu-latest", "windows-latest" ]
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+```
+
+Zastosuj wyżej wymieniony krok tylko w momencie budowania projektu
+Dodatkowo zauważ, iż domyślnie środowisko systemu operacyjnego Windows domyślnie uruchamia się z powłoką PowerShell, by dokonać niezbędnych zmian zastosuj poniższy fragment:
+
+```yaml
+defaults:
+  run:
+    shell: bash
 ```
 
 Przykładowy wygląd środowiska ciągłej integracji po modyfikacji:
